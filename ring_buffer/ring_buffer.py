@@ -13,4 +13,8 @@ class RingBuffer:
       self.current += 1
 
   def get(self):
-    pass
+    temp = []
+    for i in range(len(self.storage)):
+      if self.storage[i] != None:
+        temp.append(self.storage[i])
+    return temp
